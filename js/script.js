@@ -11,6 +11,5 @@ for(let i=0; i < alunos.length; i++) {
     } else {
         aluno.style.backgroundColor = "lightgreen";
     }
-
-    
 }
+

@@ -16,12 +16,18 @@ button.addEventListener("click", function(event) {
     notaumTd.textContent = notaumValue;
     notadoisTd.textContent = notadoisValue;
     mediaTd.textContent = media;
-    alunoTr.appendChild(nomeTd);
-    alunoTr.appendChild(notaumTd);
-    alunoTr.appendChild(notadoisTd);
-    alunoTr.appendChild(mediaTd);
-    tabela.appendChild(alunoTr);
-})
+    if (notaumValue > 10 || notadoisValue > 10) {
+        alert ("Nota inválida. Insira uma nota menor que 10");
+    } else {
+        alunoTr.appendChild(nomeTd);
+        alunoTr.appendChild(notaumTd);
+        alunoTr.appendChild(notadoisTd);
+        alunoTr.appendChild(mediaTd);
+        tabela.appendChild(alunoTr);
+        approved(media,mediaTd);
+    };
+});
+
 
 
 

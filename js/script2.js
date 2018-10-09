@@ -24,7 +24,7 @@ button.addEventListener("click", function(event) {
         alunoTr.appendChild(notadoisTd);
         alunoTr.appendChild(mediaTd);
         tabela.appendChild(alunoTr);
-        approved(media,mediaTd);
+        result(media,mediaTd);
     };
 });
 
